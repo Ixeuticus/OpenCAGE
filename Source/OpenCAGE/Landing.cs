@@ -196,6 +196,7 @@ namespace OpenCAGE
 
             //Version tracking analytics
             AnalyticsManager.LogAppStartup(ProductVersion);
+            SettingsManager.SetString("OpenCAGE_Version", Application.ProductVersion);
 
             //Show GitHub prompt?
             if (SettingsManager.GetInteger("LOG_UntilGHPrompt") < 3)

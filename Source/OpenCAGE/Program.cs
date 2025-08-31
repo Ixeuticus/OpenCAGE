@@ -39,8 +39,6 @@ namespace OpenCAGE
                 }
             }
 
-            SettingsManager.SetString("OpenCAGE_Version", Application.ProductVersion);
-
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(true);
             Application.Run(new Landing());
