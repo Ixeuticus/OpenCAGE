@@ -550,7 +550,22 @@ function App() {
     // --- Rendering Logic ---
     return React.createElement('div', { className: 'container pb-5' }, 
         React.createElement('div', { className: 'dashboard-header' }, React.createElement('h1', null, 'OpenCAGE Analytics Dashboard')),
-
+        
+        // New Bootstrap alert for crash logs
+        React.createElement('div', { className: 'alert alert-warning alert-dismissible fade show mt-3', role: 'alert' },
+            'View detailed crash logs for the script editor on the ',
+            React.createElement('a', { href: '/crashes/', className: 'alert-link' }, 'crashes page'),
+            '.',
+            React.createElement('button', {
+                type: 'button',
+                className: 'close',
+                'data-dismiss': 'alert',
+                'aria-label': 'Close'
+            },
+                React.createElement('span', { 'aria-hidden': 'true' }, '×')
+            )
+        ),
+        
         // Rows 1 & 2: Stats Cards
         React.createElement('div', { className: 'row mb-4' }, /* ... Lifetime Stats ... */ 
              React.createElement('div', { className: 'col-md-12'},
