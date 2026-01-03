@@ -13,7 +13,7 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 
-$sql = "SELECT id, application_version, game_version, datetime, os_name, cpu_name, ram_total, current_level, current_composite, current_entity FROM crashes ORDER BY datetime DESC";
+$sql = "SELECT id, application_version, game_version, datetime, uptime, os_name, cpu_name, ram_total, current_level, current_composite, current_entity FROM crashes ORDER BY datetime DESC";
 $result = $conn->query($sql);
 
 $crashes_by_version_sql = "SELECT application_version, game_version, COUNT(*) as count FROM crashes GROUP BY application_version, game_version ORDER BY count DESC";
@@ -167,6 +167,7 @@ $conn->close();
                 <tr>
                     <th>ID</th>
                     <th>Date/Time</th>
+                    <th>Uptime</th>
                     <th>App Version</th>
                     <th>Game Version</th>
                     <th>OS</th>
@@ -184,6 +185,7 @@ $conn->close();
                     <tr data-id="<?php echo $row['id']; ?>">
                         <td><?php echo htmlspecialchars($row['id']); ?></td>
                         <td><?php echo htmlspecialchars($row['datetime']); ?></td>
+                        <td><?php echo htmlspecialchars($row['uptime']); ?></td>
                         <td><?php echo htmlspecialchars($row['application_version']); ?></td>
                         <td><?php echo htmlspecialchars($row['game_version']); ?></td>
                         <td><?php echo htmlspecialchars($row['os_name']); ?></td>

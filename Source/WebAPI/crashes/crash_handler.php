@@ -18,6 +18,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $application_version = $conn->real_escape_string($_POST['application_version']);
     $game_version = $conn->real_escape_string($_POST['game_version']);
     $datetime = $conn->real_escape_string($_POST['datetime']);
+    $uptime = $conn->real_escape_string($_POST['uptime']);
     $os_name = $conn->real_escape_string($_POST['os_name']);
     $cpu_name = $conn->real_escape_string($_POST['cpu_name']);
     $ram_total = $conn->real_escape_string($_POST['ram_total']); 
@@ -26,8 +27,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $current_entity = $conn->real_escape_string($_POST['current_entity']);
 
     // SQL query to insert data into the 'crashes' table
-    $sql = "INSERT INTO crashes (error_log, application_version, game_version, datetime, os_name, cpu_name, ram_total, current_level, current_composite, current_entity)
-            VALUES ('$error_log', '$application_version', '$game_version', '$datetime', '$os_name', '$cpu_name', '$ram_total', '$current_level', '$current_composite', '$current_entity')";
+    $sql = "INSERT INTO crashes (error_log, application_version, game_version, datetime, uptime, os_name, cpu_name, ram_total, current_level, current_composite, current_entity)
+            VALUES ('$error_log', '$application_version', '$game_version', '$datetime', '$uptime', '$os_name', '$cpu_name', '$ram_total', '$current_level', '$current_composite', '$current_entity')";
 
     if ($conn->query($sql) === TRUE) {
         http_response_code(200);
