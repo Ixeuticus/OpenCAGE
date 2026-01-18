@@ -10,7 +10,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Matt Filer")]
 [assembly: AssemblyProduct("OpenCAGE")]
-[assembly: AssemblyCopyright("Copyright © Matt Filer 2017-25")]
+[assembly: AssemblyCopyright("Copyright © Matt Filer 2017-26")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
