@@ -2,23 +2,23 @@
   "archives": [
     {
       "name": "asseteditor",
-      "size": "33300001",
-      "hash": "096413fb5d2094de8e56299a5c9c79e6"
+      "size": "37004833",
+      "hash": "583e427bf9421b984042b6a8a9519b8d"
     },
     {
       "name": "legendplugin",
-      "size": "1327782",
-      "hash": "d84373540469145a64c518fdd5c0cd4e"
+      "size": "1276070",
+      "hash": "c76d8a1ed540b1a0b24c87c51ea4d625"
     },
     {
       "name": "scripteditor",
-      "size": "18888744",
-      "hash": "7d390224839ec444e1eecaefe2f7245e"
+      "size": "19607080",
+      "hash": "5d1986cc6e5c7d00cf8097c0066e8e4c"
     },
     {
       "name": "configeditor",
-      "size": "2336299",
-      "hash": "d3a8787a881036ca1bd784c46f429d6d"
+      "size": "2224171",
+      "hash": "359d8ec020c9d6f9fb534fc3de6dc889"
     },
     {
       "name": "cinematictools",
@@ -42,8 +42,8 @@
     },
     {
       "name": "levelviewer",
-      "size": "13006834",
-      "hash": "c8980091a017326d716b616ba32043d7"
+      "size": "12293990",
+      "hash": "7dc786d81df25c4b5534691fdc79ba71"
     }
   ]
 }
