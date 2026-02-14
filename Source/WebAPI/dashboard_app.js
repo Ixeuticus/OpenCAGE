@@ -508,6 +508,11 @@ function App() {
                     eventName: 'Alien Romulus Release', 
                     color: 'rgba(220, 53, 69, 0.7)' 
                 },
+                { 
+                    date: '2025-08-12', 
+                    eventName: 'Alien Earth Release', 
+                    color: 'rgba(220, 53, 69, 0.7)' 
+                },
                 // Add more events here by duplicating the object above
                 // and changing the date, eventName, and optionally color.
                 // Example:
